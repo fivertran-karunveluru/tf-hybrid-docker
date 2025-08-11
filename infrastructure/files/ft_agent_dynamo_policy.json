@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:DescribeStream",
+        "dynamodb:DescribeTable",
+        "dynamodb:GetRecords",
+        "dynamodb:Scan",
+        "dynamodb:ListTables",
+        "dynamodb:GetShardIterator"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

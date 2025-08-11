@@ -1,0 +1,36 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and modify the values as needed
+
+# Environment configuration
+environment = "dev"
+project_name = "Docker-Hybrid-Agent"
+
+# EC2 instance configuration
+instance_type = "t3.xlarge"
+ami_id = "ami-0520f976ad2e6300c"
+
+# Network configuration
+my_ip = "xx.xx.xx.xx/32"
+health_check_port = 8090
+
+# Fivetran configuration
+external_id = "representing_rose"
+agent_token = "your-agent-token-here"  # Replace with actual token
+
+# Organization information
+team_name = "solution_architects"
+department_name = "customer_solutions_group"
+owner_name = "karunakar.veluru@fivetran.com"
+expires_on = "2025-06-30"
+
+# AWS configuration
+key_name = "kveluru-key-pair"
+aws_region = "us-west-2"
+aws_profile = "default"
+
+# S3 Backend Configuration
+terraform_state_bucket = "fivetran-terraform-state"
+terraform_state_key = "hybrid/docker/terraform.tfstate"
+terraform_state_region = "us-west-2"
+terraform_state_dynamodb_table = "terraform-state-lock"
+terraform_state_encrypt = true
